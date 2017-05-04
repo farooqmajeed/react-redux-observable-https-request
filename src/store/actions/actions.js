@@ -1,7 +1,7 @@
 export default class Actions {
 
-    static UserData = "USER_DATA";
-    static UserDataSuccessful = "USER_DATA_SUCCESSFUL"
+    static USER_DATA = "USER_DATA";
+    static USER_DATA_SUCCESSFUL = "USER_DATA_SUCCESSFUL"
     
     static userData(){
         return{

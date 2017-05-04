@@ -7,6 +7,8 @@ const Initial_state = {
 function userReducer(state = Initial_state, action) {
     switch(action.type) {
         case Action.USER_DATA_SUCCESSFUL:
-        return
+        return {...state, UserList:action.payload}
+        default:
+    return state
     }
 }
