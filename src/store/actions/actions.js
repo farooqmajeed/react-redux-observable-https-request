@@ -5,14 +5,14 @@ export default class Actions {
     
     static userData(){
         return{
-            type: Action.USER_DATA
+            type: Actions.USER_DATA
             
         }
     }
-    static UserDataSuccessful(){
+    static UserDataSuccessful(userList){
         return{
-            type: Action.USER_DATA_SUCCESSFUL,
-            payload: UserList
+            type: Actions.USER_DATA_SUCCESSFUL,
+            payload: userList
         }
     }
 }

@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import User from '../components/user/user'
 
 import Actions from '../store/actions/actions'
 function mapStateToProps(state) {
+    console.log("state", state.userReducer);
     return{
-        UserList : state.userReducer.UserList
+        userList : state.userReducer.userList
+    
     };
 }
 
@@ -21,7 +24,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <User />
+                <User  {...this.props}/>
             </div>
         );
     }
